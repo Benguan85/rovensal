@@ -9,5 +9,5 @@ import { Menu } from "./components/menu/menu";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('cambino');
+  protected readonly title = signal('rovensal');
 }

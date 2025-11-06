@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cambino": {
+    "rovensal": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -62,10 +62,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cambino:build:production"
+              "buildTarget": "rovensal:build:production"
             },
             "development": {
-              "buildTarget": "cambino:build:development"
+              "buildTarget": "rovensal:build:development"
             }
           },
           "defaultConfiguration": "development"

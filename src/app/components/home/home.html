@@ -1,40 +1,28 @@
-<h1>Este es el componente home</h1>
+<div class="card p-5 bg-light mb-4">
+  <h1>Rovensal</h1>
+  <h3 class="text-muted">Aprende y practica Angular</h3>
+  <h5 class="text-muted">Proyecto intermodular - Reto 3 - Curso 2025-2026</h5>
+</div>
 
-<!-- enlazar la página de ejercicios -->
-<a href="ejer01">Ir al ejercicio 01 de la clase</a><br>
-<a href="landing">Ir a la página de landing</a><br>
-
-
-<hr>
-
-<h1>Hola {{nombreUsuario}}</h1>
-<input type="text" placeholder="Escribe tu nombre" [value]="nombreUsuario"
-  (input)="cambiarNombre($event.target.value)"><br />
-<h3>OJO, 5 tipos de enlace:</h3>
-<ul>
-  <li><a href="saludoenrutado/{{nombreUsuario}}">Primero: Ir al componente saludo enrutado a que me salude</a></li>
-  <li><a [href]="'saludoenrutado/' + nombreUsuario">Segundo: Ir al componente saludo enrutado a que me salude (usando
-      binding)</a></li>
-  <li><button (click)="irASaludoEnrutado()">Tercero: Ir al componente saludo enrutado a que me salude (usando
-      método con window)</button></li>
-  <li><button (click)="irASaludoEnrutado2()">Cuarto: Ir al componente saludo enrutado a que me salude (usando
-      método en el controlador y roterlink)</button></li>
-  <li>
-    <a [routerLink]="['/saludoenrutado', nombreUsuario]">Quinto: Ir al componente saludo enrutado a que me salude
-      (usando routerLink en plantilla)</a>
-  </li>
-</ul>
-<hr>
-<h3>RxJS</h3>
-<a [routerLink]="['/rx']">Ir a la página de ejemplos RxJS</a><br>
-<hr>
-<h3>Componente Padre e Hijo</h3>
-<a [routerLink]="['/padre']">Ir al componente Padre</a><br>
-<hr>
-<h3>Obteniendo un múmero aletorio de un servicio injectable</h3>
-<button (click)="obtenerNumeroAleatorio()">Obtener número aleatorio entre 1 y 100 desde el servicio aleatorio</button><br>
-<h2>Número aleatorio obtenido: {{numeroAleatorio}}</h2>
-<hr>
-<h3>Componente no enrutado aleatorio que gasta el servicio aleatorio</h3>
-<app-aleatorio></app-aleatorio>
-<hr>
+<nav>  
+  <ul>
+    <li><a routerLink="/alcalde">Alcalde</a></li>
+    <li><a routerLink="/alcanyiz">Alcanyiz</a></li>
+    <li><a routerLink="/alfonso">Alfonso</a></li>
+    <li><a routerLink="/calinescu">Calinescu</a></li>
+    <li><a routerLink="/castanyera">Castanyera</a></li>
+    <li><a routerLink="/contreras">Contreras</a></li>
+    <li><a routerLink="/fernandez">Fernandez</a></li>
+    <li><a routerLink="/garcia">Garcia</a></li>
+    <li><a routerLink="/pallas">Pallas</a></li>
+    <li><a routerLink="/palomares">Palomares</a></li>
+    <li><a routerLink="/pavon">Pavon</a></li>
+    <li><a routerLink="/reyna">Reyna</a></li>
+    <li><a routerLink="/salinas">Salinas</a></li>
+    <li><a routerLink="/sempertegui">Sempertegui</a></li>
+    <li><a routerLink="/silvestre">Silvestre</a></li>
+    <li><a routerLink="/soares">Soares</a></li>
+    <li><a routerLink="/uski">Uski</a></li>
+    <li><a routerLink="/zanon">Zanon</a></li>
+  </ul>
+</nav>

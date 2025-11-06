@@ -1,22 +1,43 @@
 import { Routes } from '@angular/router';
 import { Home } from './components/home/home';
-import { Landing } from './components/landing/landing';
-import { Ejercicio01Clase } from './components/ejercicio01clase/ejercicio01clase';
-import { SaludoEnrutado } from './components/saludoenrutado/saludoenrutado';
-import { Rxjscomponent } from './components/rxjscomponent/rxjscomponent';
-import { PadreComponent } from './components/padre/padre';
-import { PostListComponent } from './components/post-list/post-list';
-import { UsuarioComponent } from './components/usuario/usuario';
+import { AlcaldeComponent } from './entregas/alcalde/component/alcaldeComponent/alcaldeComponent';
+import { AlcanyizComponent } from './entregas/alcanyiz/component/alcanyizComponent/alcanyizComponent';
+import { AlfonsoComponent } from './entregas/alfonso/component/alfonsoComponent/alfonsoComponent';
+import { CalinescuComponent } from './entregas/calinescu/component/calinescuComponent/calinescuComponent';
+import { CastanyeraComponent } from './entregas/castanyera/component/castanyeraComponent/castanyeraComponent';
+import { ContrerasComponent } from './entregas/contreras/component/contrerasComponent/contrerasComponent';
+import { FernandezComponent } from './entregas/fernandez/component/fernandezComponent/fernandezComponent';
+import { GarciaComponent } from './entregas/garcia/component/garciaComponent/garciaComponent';
+import { PallasComponent } from './entregas/pallas/component/pallasComponent/pallasComponent';
+import { PalomaresComponent } from './entregas/palomares/component/palomaresComponent/palomaresComponent';
+import { PavonComponent } from './entregas/pavon/component/pavonComponent/pavonComponent';
+import { ReynaComponent } from './entregas/reyna/component/reynaComponent/reynaComponent';
+import { SalinasComponent } from './entregas/salinas/component/salinasComponent/salinasComponent';
+import { SemperteguiComponent } from './entregas/sempertegui/component/semperteguiComponent/semperteguiComponent';
+import { SilvestreComponent } from './entregas/silvestre/component/silvestreComponent/silvestreComponent';
+import { SoaresComponent } from './entregas/soares/component/soaresComponent/soaresComponent';
+import { UskiComponent } from './entregas/uski/component/uskiComponent/uskiComponent';
+import { ZanonComponent } from './entregas/zanon/component/zanonComponent/zanonComponent';
 
 export const routes: Routes = [
     { path: '', component: Home },
     { path: 'home', component: Home },
-    { path: 'landing', component: Landing },
-    { path: 'ejer01', component: Ejercicio01Clase },
-    { path: 'saludoenrutado', component: SaludoEnrutado },
-    { path: 'saludoenrutado/:nombre', component: SaludoEnrutado },
-    { path: 'rx', component: Rxjscomponent },
-    { path: 'padre', component: PadreComponent },
-    { path: 'post', component: PostListComponent },
-    { path: 'usuario', component: UsuarioComponent },
+    { path: 'alcalde', component: AlcaldeComponent },
+    { path: 'alcanyiz', component: AlcanyizComponent },
+    { path: 'alfonso', component: AlfonsoComponent },
+    { path: 'calinescu', component: CalinescuComponent },
+    { path: 'castanyera', component: CastanyeraComponent },
+    { path: 'contreras', component: ContrerasComponent },
+    { path: 'fernandez', component: FernandezComponent },
+    { path: 'garcia', component: GarciaComponent },
+    { path: 'pallas', component: PallasComponent },
+    { path: 'palomares', component: PalomaresComponent },
+    { path: 'pavon', component: PavonComponent },
+    { path: 'reyna', component: ReynaComponent },
+    { path: 'salinas', component: SalinasComponent },
+    { path: 'sempertegui', component: SemperteguiComponent },
+    { path: 'silvestre', component: SilvestreComponent },
+    { path: 'soares', component: SoaresComponent },
+    { path: 'uski', component: UskiComponent },
+    { path: 'zanon', component: ZanonComponent },
 ];

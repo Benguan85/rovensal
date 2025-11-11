@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { Home } from './components/home/home';
-import { AlcaldeComponent } from './entregas/alcalde/component/alcaldeComponent/alcaldeComponent';
+import { AlcaldeComponent } from './entregas/alcalde/component/alcalde-component/alcalde-component';
 import { AlcanyizComponent } from './entregas/alcanyiz/component/alcanyizComponent/alcanyizComponent';
 import { CalinescuComponent } from './entregas/calinescu/component/calinescuComponent/calinescuComponent';
 import { CastanyeraComponent } from './entregas/castanyera/component/castanyeraComponent/castanyeraComponent';
@@ -33,7 +33,21 @@ import { QuizComponent } from './entregas/soares/soares/component/quiz/quiz.comp
 export const routes: Routes = [
     { path: '', component: Home },
     { path: 'home', component: Home },
-    { path: 'alcalde', component: AlcaldeComponent },
+    { 
+        path: 'alcalde', 
+        component: AlcaldeComponent,
+        children: [
+            { path: '', redirectTo: 'bienvenida', pathMatch: 'full' },
+            { 
+                path: 'bienvenida', 
+                loadComponent: () => import('./entregas/alcalde/component/bienvenida/bienvenida').then(m => m.Bienvenida)
+            },
+            { 
+                path: 'animales', 
+                loadComponent: () => import('./entregas/alcalde/component/lista-animales/lista-animales').then(m => m.ListaAnimales)
+            }
+        ]
+    },
     { path: 'alcanyiz', component: AlcanyizComponent },
     {
         path: 'alfonso',
